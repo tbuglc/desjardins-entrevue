@@ -66,7 +66,7 @@ Vous avez aussi, optionnellement, la possibilité d'utiliser les librairies Lomb
 - Status: 200 OK
 
 ```
-http://localhost:8080/api/film/1
+http://localhost:8080/api/films/1
 {
    "id":1,
    "titre":"Star Wars: The Empire Strikes Back",
@@ -107,7 +107,7 @@ http://localhost:8080/api/film/1
       }
    ]
 }'
-http://localhost:8080/api/film --header "Content-Type:application/json"
+http://localhost:8080/api/films/nouveau --header "Content-Type:application/json"
 
 {
    "id":4,
