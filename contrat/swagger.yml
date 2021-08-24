@@ -7,7 +7,7 @@ servers:
   - url: http://localhost:8080
 
 paths:
-  /api/film/{id}:
+  /api/films/{id}:
     get:
       summary: Obtenir tous les film disponible
       operationId: obtenirFilm
@@ -26,7 +26,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ReponseFilm'
-  /api/film/:
+  /api/films/nouveau:
     post:
       summary: Crée un film
       operationId: creeFilm
@@ -37,14 +37,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/ThirdpartyDealerCreationRequest'
+              $ref: '#/components/schemas/RequeteCreationFilm'
       responses:
           200:
             description: Created
             content:
               application/json:
                 schema:
-                  $ref: '#/components/schemas/ThirdpartyDealerResponse'
+                  $ref: '#/components/schemas/ReponseFilm'
 
 components:
   schemas:
@@ -78,7 +78,7 @@ components:
       type: object
       properties:
         id:
-          type: long
+          type: number
           description: "Id du film"
           example: 12
         titre:
@@ -97,7 +97,7 @@ components:
       type: object
       properties:
         id:
-          type: long
+          type: number
           description: "Id de l'acteur"
           example: 12
         nom:
