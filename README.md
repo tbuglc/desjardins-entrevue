@@ -59,7 +59,7 @@ Vous avez aussi, optionnellement, la possibilité d'utiliser les librairies Lomb
 
 ## Endpoints
 
-#### GET /api/film/{id}
+#### GET /api/films/{id}
 
 - Requête: ID dans l'URI
 - Réponse: Objet Film (Voir modèle)
@@ -86,7 +86,7 @@ http://localhost:8080/api/film/1
 }
 ```
 
-#### POST /api/film
+#### POST /api/films/nouveau
 
 - Requête: Objet Film dans le body
 - Réponse: Objet Film crée
