@@ -26,7 +26,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ReponseFilm'
-  /api/films/nouveau:
+  /api/films:
     post:
       summary: Crée un film
       operationId: creeFilm
