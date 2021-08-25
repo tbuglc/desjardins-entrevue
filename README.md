@@ -86,7 +86,7 @@ http://localhost:8080/api/films/1
 }
 ```
 
-#### POST /api/films/nouveau
+#### POST /api/films
 
 - Requête: Objet Film dans le body
 - Réponse: Objet Film crée
@@ -107,7 +107,7 @@ http://localhost:8080/api/films/1
       }
    ]
 }'
-http://localhost:8080/api/films/nouveau --header "Content-Type:application/json"
+http://localhost:8080/api/films --header "Content-Type:application/json"
 
 {
    "id":4,
