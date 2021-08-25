@@ -14,7 +14,6 @@ Vous devez créer 2 endpoints dans l'API:
 
 - Ne vous souciez pas de valider l'entrée de l'utilisateur, vous pouvez présumer que la requête sera toujours valide.
 - Il n'est pas nécessaire d'implémenter un mécanisme de sécurité.
-- Il n'est pas nécessaire d'écrire des tests unitaires.
 
 ## Critères
 
@@ -22,6 +21,7 @@ Vous devez créer 2 endpoints dans l'API:
 - Structure des classes
 - Qualité du code
 - Utilisation des meilleurs pratiques
+- Écriture des tests unitaires selon  les meilleurs pratiques
 
 ## Outils à utiliser
 
