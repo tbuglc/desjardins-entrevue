@@ -1,9 +1,7 @@
-HELP.md
 .gradle
-build/
+/build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+.generatedsources/
 
 ### STS ###
 .apt_generated
@@ -13,18 +11,25 @@ build/
 .settings
 .springBeans
 .sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+/out/
+
+### VisualStudioCode ###
+.vscode/*
+
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+*.hprof
 
 ### NetBeans ###
 /nbproject/private/
@@ -33,5 +38,8 @@ out/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
-.vscode/
+### Wiremock ####
+wiremock-standalone-*.jar
+
+### Creer par la compile des classes ###
+/bin/
