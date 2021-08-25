@@ -59,7 +59,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/films/nouveau",
+					"raw": "http://localhost:8080/api/films",
 					"protocol": "http",
 					"host": [
 						"localhost"
