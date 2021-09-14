@@ -25,7 +25,7 @@ Vous devez créer 2 endpoints dans l'API:
 
 ## Outils à utiliser
 
-Le projet contient déjà les dépendances Maven requises et la configuration nécessaire pour H2.  
+Le projet contient déjà les dépendances Gradle requises et la configuration nécessaire pour H2.  
 Vous avez aussi, optionnellement, la possibilité d'utiliser les librairies Lombok et MapStruct si vous le désirez.
 
 - Java 11
