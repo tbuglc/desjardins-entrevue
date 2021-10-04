@@ -7,12 +7,8 @@ import com.example.entrevueSpringBoot.service.ActeurService;
 import com.example.entrevueSpringBoot.entity.Film;
 import com.example.entrevueSpringBoot.service.FilmService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.entrevueSpringBoot.exception.BadRequest;
 import com.example.entrevueSpringBoot.exception.NotFoundError;
@@ -20,7 +16,7 @@ import com.example.entrevueSpringBoot.exception.NotFoundError;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping("/films")
+@RequestMapping("/api/film")
 @Slf4j
 public class FilmController {
 	@Autowired
@@ -30,6 +26,7 @@ public class FilmController {
 	private ActeurService acteurService;
 
 	@PostMapping
+	@ResponseStatus(HttpStatus.CREATED)
 	Film postFilem(@RequestBody Film film) {
 
 		List<Acteur> acteurs = acteurService.addFilmActeur(film.getActeurs());
