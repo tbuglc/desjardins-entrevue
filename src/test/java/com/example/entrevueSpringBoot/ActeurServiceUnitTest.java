@@ -1,9 +1,9 @@
 package com.example.entrevueSpringBoot;
 
-import com.tbuglc.film.entity.Acteur;
-import com.tbuglc.film.exception.BadRequest;
-import com.tbuglc.film.repository.ActeurRepository;
-import com.tbuglc.film.service.ActeurService;
+import com.example.entrevueSpringBoot.entity.Acteur;
+import com.example.entrevueSpringBoot.exception.BadRequest;
+import com.example.entrevueSpringBoot.repository.ActeurRepository;
+import com.example.entrevueSpringBoot.service.ActeurService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

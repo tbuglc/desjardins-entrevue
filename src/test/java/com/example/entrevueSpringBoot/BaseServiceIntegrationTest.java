@@ -1,8 +1,8 @@
 package com.example.entrevueSpringBoot;
 
-import com.tbuglc.film.entity.Acteur;
-import com.tbuglc.film.entity.Film;
-import com.tbuglc.film.service.BaseService;
+import com.example.entrevueSpringBoot.entity.Acteur;
+import com.example.entrevueSpringBoot.entity.Film;
+import com.example.entrevueSpringBoot.service.BaseService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
